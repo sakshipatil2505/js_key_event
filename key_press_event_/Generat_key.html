@@ -1,0 +1,30 @@
+
+<html>
+    <head>
+        <title></title>
+        <link rel = "stylesheet" href="">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+               <p>a function is triggered when the user is pressing a key in the input field.</p>    </p>
+               <br>
+               <input type ="text" class ="effect-1" onkeypress="keyPress(event)" onkeydown="keyDown()" onkeyup="keyUp()">
+                 <br/>
+               <p id ="keys"></p>
+            </div>
+         </div>
+         <script>
+            const keyPress = (event) => {
+               document.getElementById("keys").innerHTML = `you press ${event.key}and it's code is ${event.code}` 
+            }
+            //  const keyDown = () =>{
+            //    document.getElementById("keys").innerHTML = `key is down`;
+            // }
+            // const keyUp = () =>{
+            //    document .getElementById("keys").innerHTML=`key is up`;
+            // }
+         </script>
+         </body>
+</html>
+         
